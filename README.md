@@ -35,7 +35,8 @@ confluent start schema-registry
 ```
 ## Start standalone Connect
 ```
-connect-standalone /etc/schema-registry/connect-avro-standalone.properties /etc/kafka-connect-hdfs/quickstart-hdfs.properties
+connect-standalone /etc/schema-registry/connect-avro-standalone.properties \
+  /etc/kafka-connect-hdfs/quickstart-hdfs.properties
 ```
 ## Start producer and write some values
 ```
@@ -52,6 +53,6 @@ kafka-avro-console-producer \
 hadoop fs -ls /topics/test_hdfs/partition=0
 ```
 # Reference issues
-https://github.com/confluentinc/schema-registry/issues/705
-https://github.com/confluentinc/schema-registry/issues/765
-https://github.com/confluentinc/kafka-connect-hdfs/issues/159
+- https://github.com/confluentinc/schema-registry/issues/705
+- https://github.com/confluentinc/schema-registry/issues/765
+- https://github.com/confluentinc/kafka-connect-hdfs/issues/159
