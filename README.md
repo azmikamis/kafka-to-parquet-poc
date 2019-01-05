@@ -52,7 +52,11 @@ kafka-avro-console-producer \
 ```
 hadoop fs -ls /topics/test_hdfs/partition=0
 ```
+# Guide
+- https://docs.confluent.io/current/connect/kafka-connect-hdfs/index.html
 # Reference issues
 - https://github.com/confluentinc/schema-registry/issues/705
 - https://github.com/confluentinc/schema-registry/issues/765
 - https://github.com/confluentinc/kafka-connect-hdfs/issues/159
+- https://stackoverflow.com/questions/49255878/kafka-conenct-hdfs-sink-saving-data-in-parquet-format
+
