@@ -52,6 +52,10 @@ kafka-avro-console-producer \
 ```
 hadoop fs -ls /topics/test_hdfs/partition=0
 ```
+## Check file
+```
+hadoop jar parquet-tools-1.9.0.jar cat --json /topics/test_hdfs/partition=0/test_hdfs+0+0000000000+0000000002.parquet
+```
 # Guide
 - https://docs.confluent.io/current/connect/kafka-connect-hdfs/index.html
 # Reference issues
